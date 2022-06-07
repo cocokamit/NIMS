@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paws"
+    tools:context=".RegisterUser">
+
+
+
+    <RelativeLayout
+        android:id="@+id/linear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CCFFFFFF"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/petprof"
+                    android:layout_width="155dp"
+                    android:layout_height="155dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="250dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="250dp">
+
+                        <ImageView
+                            android:id="@+id/imagepetid"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@color/teal_700"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_baseline_pets_24" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Pet Info"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/petprof" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundMode="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias=".5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:layout_constraintVertical_bias=".5"
+                    app:layout_constraintWidth_percent=".8">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtpetname"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:background="@drawable/edittextbg_underline"
+                        android:ems="10"
+                        android:hint="Name"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundMode="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias=".5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout1"
+                    app:layout_constraintVertical_bias=".5"
+                    app:layout_constraintWidth_percent=".8">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtpetmicrochip"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:background="@drawable/edittextbg_underline"
+                        android:ems="10"
+                        android:hint="Microchip"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:boxBackgroundMode="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout12"
+                    app:layout_constraintWidth_percent=".8">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtpetage"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:background="@drawable/edittextbg_underline"
+                        android:ems="10"
+                        android:hint="Age"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundMode="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+                    app:layout_constraintWidth_percent=".8">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtpetbreed"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:background="@drawable/edittextbg_underline"
+                        android:ems="10"
+                        android:hint="Breed"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/sads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Gender:"
+                    app:layout_constraintStart_toStartOf="@+id/spinner2"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout10">
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextbg_underline"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sads"
+                    app:layout_constraintWidth_percent=".8">
+
+                </Spinner>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundMode="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner2"
+                    app:layout_constraintWidth_percent=".8">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtpetdateofbirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:background="@drawable/edittextbg_underline"
+                        android:ems="10"
+                        android:hint="Date of Birth"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundMode="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout11"
+                    app:layout_constraintWidth_percent=".8">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtpetweight"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:background="@drawable/edittextbg_underline"
+                        android:ems="10"
+                        android:hint="Weight"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundMode="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+                    app:layout_constraintWidth_percent=".8">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtpetcoat"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:background="@drawable/edittextbg_underline"
+                        android:ems="10"
+                        android:hint="Coat/Plumage"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundMode="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
+                    app:layout_constraintWidth_percent=".8">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtspecie"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:background="@drawable/edittextbg_underline"
+                        android:ems="10"
+                        android:hint="Specie"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+              <!--  <TextView
+                    android:id="@+id/tesstspecie"
+                    android:layout_width="54dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Specie:"
+                    app:layout_constraintStart_toStartOf="@+id/spinner1"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
+
+                </TextView>
+
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextbg_underline"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tesstspecie"
+                    app:layout_constraintWidth_percent=".8">
+
+                </Spinner>
+--><!--
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/contrainvac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout13">
+                </androidx.constraintlayout.widget.ConstraintLayout>-->
+                 <!--   <LinearLayout
+                        android:id="@+id/contrainvac"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       android:layout_marginTop="10dp"
+                       app:layout_constraintTop_toBottomOf="@+id/btnvaccinationform">
+
+                    <ListView
+                        android:id="@+id/l3view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        android:dividerHeight="0dp">
+
+                    </ListView>
+
+                   </LinearLayout>-->
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:id="@+id/contrainvac"
+                    android:layout_width="0dp"
+                    android:layout_height="400dp"
+                    app:layout_constraintWidth_percent=".8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/btnvaccinationform">
+
+                    <ListView
+                        android:id="@+id/l3view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        android:dividerHeight="0dp">
+
+                    </ListView>
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                 <!--   <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxBackgroundMode="none"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent=".8">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtpetantiereabiesno"
+                            android:layout_width="match_parent"
+                            android:layout_height="43dp"
+                            android:background="@drawable/edittextbg_underline"
+                            android:ems="10"
+                            android:hint="Latest Anti-Rabies Vaccination Serial #"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundMode="none"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9"
+                        app:layout_constraintWidth_percent=".8">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtpetvaccination"
+                            android:layout_width="match_parent"
+                            android:layout_height="43dp"
+                            android:background="@drawable/edittextbg_underline"
+                            android:ems="10"
+                            android:hint="Vaccination Stock Number"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundMode="none"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+                        app:layout_constraintWidth_percent=".8">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtpetantiRabiesdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="43dp"
+                            android:background="@drawable/edittextbg_underline"
+                            android:ems="10"
+                            android:hint="Anti Rabies Application Date"
+                            android:inputType="date"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+-->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnvaccinationform"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bgbutton"
+                    android:text="Add Vacination"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout13"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintWidth_percent=".5" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAdd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bgbutton"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/contrainvac"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintWidth_percent=".6" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

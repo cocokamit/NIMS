@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.petmesh">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PetMEsh">
+        <activity android:name=".Administrator"></activity>
+        <activity android:name=".RegisterDoctor" />
+        <activity android:name=".DoctorList" />
+        <activity android:name=".Microchips" />
+        <activity android:name=".owners.OwnerItemInfo" />
+        <activity android:name=".inventory_info" />
+        <activity android:name=".InventoryAdder" />
+        <activity android:name=".Reports" />
+        <activity android:name=".Inventory" />
+        <activity android:name=".owners.OwnerActivity" />
+        <activity android:name=".DoctorProf" />
+        <activity android:name=".Login" />
+        <activity android:name=".PetList" />
+        <activity android:name=".ui.OwnerList" />
+        <activity android:name=".PetInfo" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterPet" />
+        <activity android:name=".OwnersProf" />
+        <activity android:name=".RegisterUser" />
+        <activity
+            android:name=".Login2"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
